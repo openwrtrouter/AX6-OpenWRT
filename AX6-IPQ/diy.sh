@@ -24,6 +24,10 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/l
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-vlmcsd
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-socat
 
+
+# 增加luci-app-easytier
+git clone https://github.com/EasyTier/luci-app-easytier.git ./package/luci-app-easytier
+
 # 替换luci-app-openvpn-server imm源的启动不了服务！
 #rm -rf feeds/luci/applications/luci-app-openvpn-server
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-openvpn-server
@@ -53,3 +57,4 @@ rm -rf feeds/luci/applications/luci-app-argon-config
 
 #修改主机名
 #sed -i "s/hostname='ImmortalWrt'/hostname='Redmi-AX6'/g" package/base-files/files/bin/config_generate
+
